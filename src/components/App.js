@@ -5,21 +5,21 @@ const App = () => {
   //code here
   const [name, setName] = useState([]);
 
-  const callApi = async () => {
-    const response = await fetch(
-      "https://content.newtonschool.co/v1/pr/main/users"
-    );
-    const finalData = await JSON(response);
-    console.log(finalData);
+  // const callApi = async () => {
+  //   const response = await fetch(
+  //     "https://content.newtonschool.co/v1/pr/main/users"
+  //   );
+  //   const finalData = await JSON(response);
+  //   console.log(finalData);
+  // };
+
+  const changeInput = () => {
+    //setName(finalData.name);
   };
 
-  changeInput = () => {
-    setName(finalData.name);
-  };
-
-  useEffect(() => {
-    callApi();
-  }, []);
+  // useEffect(() => {
+  //   callApi();
+  // }, []);
 
   return (
     <div className="App">
